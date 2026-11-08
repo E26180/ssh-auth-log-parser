@@ -32,4 +32,5 @@ print(f"Total failed attempts: {failed_attempts}")
 
 print("\nFailed attempts by IP:")
 for ip, count in ip_counts.most_common():
-    print(f"{ip}: {count} attempts")
+    word = "attempt" if count == 1 else "attempts"
+    print(f"{ip}: {count} {word}")

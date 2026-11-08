@@ -19,14 +19,18 @@ A Python mini-project that analyses SSH authentication logs to identify failed l
 - sys
 
 ## Usage
+```bash
 python3 parser.py sample_auth.log
+```
 
 ## Example Output
+```text
 Total failed attempts: 5
 
 Failed attempts by IP:
 192.0.2.10: 3 attempts
 198.51.100.23: 2 attempts
+```
 
 ## Error Handling
 - Missing argument: displays a usage message
